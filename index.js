@@ -6,7 +6,7 @@ import fetch from "node-fetch";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({origin:"https://ai-powerd-frontend.onrender.com"}));
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
