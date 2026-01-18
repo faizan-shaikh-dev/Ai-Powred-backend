@@ -9,8 +9,7 @@ const app = express();
 
 /* ✅ ALLOWED ORIGINS */
 const allowedOrigins = [
-//   "http://localhost:5173",
-  "https://ai-powerd-frontend.onrender.com",
+  "http://localhost:5173",
 ];
 
 app.use(
