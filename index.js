@@ -7,22 +7,13 @@ dotenv.config();
 
 const app = express();
 
-/* ✅ ALLOWED ORIGINS */
-const allowedOrigins = [
-  "http://localhost:5173",
-];
+// /* ✅ ALLOWED ORIGINS */
+// const allowedOrigins = [
+//   "ai-powerd-frontend.vercel.app",
 
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("CORS not allowed"));
-      }
-    },
-  })
-);
+// ];
+
+app.use(cors({origin:"ai-powerd-frontend.vercel.app"}))
 
 app.use(express.json());
 
