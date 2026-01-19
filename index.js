@@ -13,7 +13,7 @@ const app = express();
 
 // ];
 
-app.use(cors({origin:"https://ai-powerd-frontend.vercel.app"}))
+app.use(cors({origin:"https://ai-powerd.up.railway.app"}))
 
 app.use(express.json());
 
